@@ -1,24 +1,132 @@
-*{
-    padding:0;
+*{padding:0;
     margin: 0;
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 body{
     background-image: url(bg-intro-desktop.png);
     background-color:  hsl(0, 100%, 74%);
-    background-position: cover;
-display: flex;
-width:100%;
-place-content: center;
-align-items: center;
-height: 100vh;
-width:100%}
-
-main .container {display: flex;
-    flex-direction: column;
-    
+    background-position: contain;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
 }
+
+.container{
+    display: flex;
+    max-width:1440px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 70px;
+    margin: auto;
+}
+.container > div{
+    flex:1;
+    padding:0 40px;
+    margin:auto;
+}
+h1{
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+
+.form form{
+    background-color: white;
+    border-radius: 5px;
+    padding:20px;
+    box-shadow:0 6px rgba(0, 0, 0,0.2); 
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    background-color: hsl(248, 32%, 49%);
+    padding:10px 20px;
+    margin-bottom: 20px;
+    box-shadow:0 4px rgba(0, 0, 0,0.2);
+    border-radius: 5px;
+    font-weight: 400;
+}
+.box p{text-align: center;}
+.label{
+    position: relative;
+    margin-bottom: 30px;
+}
+.label.small{
+    border-color: hsl(0, 100%, 74%);
+    color:hsl(0, 100%, 74%);
+}
+.label small{
+    position: absolute;
+    bottom:-20px;
+    right:0;
+    opacity:0;
+    text-align: right;
+}
+
+input{border-radius: 5px;
+    border:1px solid hsl(246, 25%, 77%);
+    padding: 13px 25px;
+    display:block;
+    width:100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input:focus{
+    border:1.5px solid hsl(249, 10%, 26%);
+    outline:none;
+}
+
+.button{
+    background-color:hsl(154, 59%, 51%);
+    border:1px solid hsl(154, 72%, 37%);
+    border-radius: 5px;
+    padding: 13px 25px;
+    display:block;
+    width:100%;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow:0 3px rgba(15, 113, 66, 0.2);
+    color:white;
+    font-family:'Poppins', sans-serif;
+    cursor:pointer;
+}
+
+.button:active{
+    border-bottom-width:2px;
+    transform: translateY(2px);
+}
+
+small{
+    display:block;
+    color: rgb(179, 174, 174);
+    font-size:11px;
+    margin-top: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+small a{
+    text-decoration: none;
+    color:hsl(0, 100%, 74%);
+}
+   
+@media screen and (max-width:375px){
+    h1{text-align: center;}
+    p{text-align: center;
+    margin-bottom: 10px;}
+}
+
+
+    
+    
+
 
    
 
