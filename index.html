@@ -20,28 +20,33 @@
             <div class="box">
             <p>try it free 7 days then $20/mo. thereafter<p>
            </div>
-            <form action="/action_page.php" method="post">
+            <form id="form">
             <div class="label">
-                <input type="text" id="first name" name="first name" placeholder="First Name"required>
-                <small>First name cannot be empty</small>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name"required>
+                <img src="icon-error.svg" alt="error-icon" />
+                <small></small>
             </div>
             <div class="label">
-                <input type="text" id="last name" name="last name" placeholder="Last Name"required>
-                <small>Last name cannot be empty</small>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name"required>
+                <img src="icon-error.svg" alt="error-icon" />
+                <small></small>
             </div>
             <div class="label">
                 <input type="email" name="email" placeholder="Email Address" required>
-                <small>looks like this is not an Email</small>
+                <img src="icon-error.svg" alt="error-icon" />
+                <small></small>
             </div>
             <div class="label">
                 <input type="password" id="password" name="password" placeholder="Password" minlength="8" required>
-                <small>Password cannot be empty</small>
+                <img src="icon-error.svg" alt="error-icon" />
+                <small></small>
             </div>
-            <input type="submit" class="button" value="CLAIM YOUR FREE TRIAL">
+            <input type="submit" id="submit" class="button" value="CLAIM YOUR FREE TRIAL">
             <small>by clicking the button, you are agreeing to our <a href="#">terms and conditions<a></small>
         </form>
         
         </div>
     </div>
     </main>
+    <script src="script.js"></script>
 </body>
