@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
-    <title>trial login page</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-   <body>
-    <main>
-      <div class="container">
-        <div class="phrase">
-        <h1>Learn to code by Watching others</h1>
-        <p>see how experienced developers solve problems in real-time.<br>
-        watching scripted tutorials is great, but understanding how<br> 
-        developers think is invaluable</p>
-        </div>
-        <div class="form">
-            <div class="box">
-            <p>try it free 7 days then $20/mo. thereafter<p>
-           </div>
-            <form id="form">
-            <div class="label">
-                <input type="text" id="firstname" name="firstname" placeholder="First Name"required>
-                <img src="icon-error.svg" alt="error-icon" />
-                <small></small>
-            </div>
-            <div class="label">
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name"required>
-                <img src="icon-error.svg" alt="error-icon" />
-                <small></small>
-            </div>
-            <div class="label">
-                <input type="email" name="email" placeholder="Email Address" required>
-                <img src="icon-error.svg" alt="error-icon" />
-                <small></small>
-            </div>
-            <div class="label">
-                <input type="password" id="password" name="password" placeholder="Password" minlength="8" required>
-                <img src="icon-error.svg" alt="error-icon" />
-                <small></small>
-            </div>
-            <input type="submit" id="submit" class="button" value="CLAIM YOUR FREE TRIAL">
-            <small>by clicking the button, you are agreeing to our <a href="#">terms and conditions<a></small>
-        </form>
-        
-        </div>
-    </div>
-    </main>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | Intro component with sign up form</title>
+
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h1>
+					Learn to code by
+					<br />
+					watching others
+				</h1>
+				<p>
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</p>
+			</div>
+			<div>
+				<div class="header">
+					<p>
+						<strong>Try it free 7 days</strong>
+						then $20/mo. thereafter
+					</p>
+				</div>
+
+				<form class="box" id="form">
+					<div class="form-control">
+						<input type="text" id="firstname" placeholder="First Name" />
+						<img src="icon-error.svg" alt="error-icon" />
+						<small></small>
+					</div>
+					<div class="form-control">
+						<input type="text" id="lastname" placeholder="Last Name" />
+						<img src="icon-error.svg" alt="error-icon" />
+						<small></small>
+					</div>
+					<div class="form-control">
+						<input type="email" id="email" placeholder="Email Address" />
+						<img src="icon-error.svg" alt="error-icon" />
+						<small></small>
+					</div>
+					<div class="form-control">
+						<input type="password" id="password" placeholder="Password" />
+						<img src="icon-error.svg" alt="error-icon" />
+						<small></small>
+					</div>
+					<button>Claim your free trial</button>
+					<small>
+						By clicking the button, you are agreeing to our
+						<a href="#">Terms and Services</a>
+					</small>
+				</form>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
