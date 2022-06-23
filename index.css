@@ -178,6 +178,7 @@ small a {
 
 	.container {
 		flex-direction: column;
+		width:375px;
 	}
     body {
         background-color: hsl(0, 100%, 74%);
